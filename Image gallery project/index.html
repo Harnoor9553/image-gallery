@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1> MY GALLERY</h1>
+
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image nature"><img src="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images-6.jpg" alt="Nature 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/jwaDIJ-zuCq172-xQ4ct1ssUfWcMB3LvXdJSK3kAV0k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyNS8w/NS8xNC8xNi8yMS9j/aXR5LTk1OTk5Njdf/NjQwLmpwZw" alt="City 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/yW7wxaAJZnwCHQIJeUDMTzUx9Xtt06OnSTqXeNFoDi8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI5/NjM0NDExOC9waG90/by9iZWF1dGlmdWwt/aGFwcHktd29tYW4t/ZW5qb3lpbmctdGhl/LXdhcm0tc3VubGln/aHQtaW4tYS10cm9w/aWNhbC1wdWJsaWMt/cGFyay5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9WjBoNHVJ/elpkNGN4aGtUX0NT/bDktMXdGYm5idXFF/V1lycDVoZU05dUR1/UT0" alt="Nature 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/m9elftpz78JbqBsAmdxHMUNZJajv6VBVWXKOQhYrUQk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvY2l0eS1p/bGx1c3RyYXRpb24t/ZG93bmxvYWQtaW4t/c3ZnLXBuZy1naWYt/ZmlsZS1mb3JtYXRz/LS1zcG9ydC1zdHJl/ZXQtY2xvdGhlcy1q/ZXJzZXktcmV0cm8t/dmludGFnZS1wYWNr/LW5hdHVyZS1pbGx1/c3RyYXRpb25zLTcy/NzExMzMucG5n" alt="City 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/27eI3IFAG2OMZLLOVkjGa_UL9x18kziM5RZIhj55s20/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8x/MS8yMS8yMC8xMC9i/YWNoLTY4MTUxODdf/NjQwLmpwZw" alt="Nature 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/BxIeiGDyOPO4Bo2b3O1eCFyVWuKYH52PxUJS757I4dQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQx/NTYxODI1NC9waG90/by9mcmllbmRzLWhh/dmluZy1mdW4tb3V0/ZG9vcnMtYXQtbmln/aHQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVV1XzRKcmVp/WEZjYnVTbnhaTE9v/LUlDRXgycW01bWpp/cTJkVGg3aHJPNWM9" alt="City 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/RLz5RwA-K7_UQJj8OVv31g2tFhItzFBrYM2kakhOJPE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/dXR1bW4tZm9yZXN0/LWxha2UtbGFuZHNj/YXBlXzIzLTIxNTE4/NDM2NDYuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MA" alt="Nature 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/992O9Z8saK890nxST_nkA5TqNHQycZyA3hv9sn_24jM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9u/ZXcteW9yay1jaXR5/XzY0OTQ0OC0xNjc5/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDA" alt="City 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/9RuF7EQ0fyEkD0a6hYpuVgjeDWMBgyQLMmeL8iIl9q4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by92aWV3LWF1dHVt/bi10cmVlcy1wYXJr/XzEwNDg5NDQtMjc0/Njg2ODYuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MA" alt="Nature 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/KIdDIALCOdcBxY5qpXymGMpONRc06U3tJjzhGfWZ83Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNi8x/MC8yNC8yMi8zOS90/cmF2ZWwtMTc2NzUz/Ml82NDAuanBn" alt="City 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/7q4npW3ycspF4IsalWha0mc8iinB24dSLODATc-qJH0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYWxsLWZyZWUt/ZG93bmxvYWQuY29t/L2ltYWdlcy90aHVt/YmpwZy93aWxkX25h/dHVyZV9waWN0dXJl/X3BlcmNoaW5nX2Jp/cmRfZWF0aW5nX2Zp/c2hfY2xvc2V1cF82/OTM2NTE1LmpwZw" alt="Nature 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/JCQPOpZQHEV9UCdW56UMm0dhokGjFr8L0CxFB--HyjU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8x/MC8wMi8wOS8xOC9h/aXJwbGFuZS02Njc0/Njg5XzY0MC5qcGc" alt="City 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images-6.jpg" alt="Nature 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/jwaDIJ-zuCq172-xQ4ct1ssUfWcMB3LvXdJSK3kAV0k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyNS8w/NS8xNC8xNi8yMS9j/aXR5LTk1OTk5Njdf/NjQwLmpwZw" alt="City 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/yW7wxaAJZnwCHQIJeUDMTzUx9Xtt06OnSTqXeNFoDi8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI5/NjM0NDExOC9waG90/by9iZWF1dGlmdWwt/aGFwcHktd29tYW4t/ZW5qb3lpbmctdGhl/LXdhcm0tc3VubGln/aHQtaW4tYS10cm9w/aWNhbC1wdWJsaWMt/cGFyay5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9WjBoNHVJ/elpkNGN4aGtUX0NT/bDktMXdGYm5idXFF/V1lycDVoZU05dUR1/UT0" alt="Nature 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/m9elftpz78JbqBsAmdxHMUNZJajv6VBVWXKOQhYrUQk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvY2l0eS1p/bGx1c3RyYXRpb24t/ZG93bmxvYWQtaW4t/c3ZnLXBuZy1naWYt/ZmlsZS1mb3JtYXRz/LS1zcG9ydC1zdHJl/ZXQtY2xvdGhlcy1q/ZXJzZXktcmV0cm8t/dmludGFnZS1wYWNr/LW5hdHVyZS1pbGx1/c3RyYXRpb25zLTcy/NzExMzMucG5n" alt="City 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/27eI3IFAG2OMZLLOVkjGa_UL9x18kziM5RZIhj55s20/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8x/MS8yMS8yMC8xMC9i/YWNoLTY4MTUxODdf/NjQwLmpwZw" alt="Nature 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/BxIeiGDyOPO4Bo2b3O1eCFyVWuKYH52PxUJS757I4dQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQx/NTYxODI1NC9waG90/by9mcmllbmRzLWhh/dmluZy1mdW4tb3V0/ZG9vcnMtYXQtbmln/aHQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVV1XzRKcmVp/WEZjYnVTbnhaTE9v/LUlDRXgycW01bWpp/cTJkVGg3aHJPNWM9" alt="City 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/RLz5RwA-K7_UQJj8OVv31g2tFhItzFBrYM2kakhOJPE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/dXR1bW4tZm9yZXN0/LWxha2UtbGFuZHNj/YXBlXzIzLTIxNTE4/NDM2NDYuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MA" alt="Nature 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/992O9Z8saK890nxST_nkA5TqNHQycZyA3hv9sn_24jM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9u/ZXcteW9yay1jaXR5/XzY0OTQ0OC0xNjc5/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDA" alt="City 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/9RuF7EQ0fyEkD0a6hYpuVgjeDWMBgyQLMmeL8iIl9q4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by92aWV3LWF1dHVt/bi10cmVlcy1wYXJr/XzEwNDg5NDQtMjc0/Njg2ODYuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MA" alt="Nature 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/KIdDIALCOdcBxY5qpXymGMpONRc06U3tJjzhGfWZ83Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNi8x/MC8yNC8yMi8zOS90/cmF2ZWwtMTc2NzUz/Ml82NDAuanBn" alt="City 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image nature"><img src="https://imgs.search.brave.com/7q4npW3ycspF4IsalWha0mc8iinB24dSLODATc-qJH0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYWxsLWZyZWUt/ZG93bmxvYWQuY29t/L2ltYWdlcy90aHVt/YmpwZy93aWxkX25h/dHVyZV9waWN0dXJl/X3BlcmNoaW5nX2Jp/cmRfZWF0aW5nX2Zp/c2hfY2xvc2V1cF82/OTM2NTE1LmpwZw" alt="Nature 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image city"><img src="https://imgs.search.brave.com/JCQPOpZQHEV9UCdW56UMm0dhokGjFr8L0CxFB--HyjU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8x/MC8wMi8wOS8xOC9h/aXJwbGFuZS02Njc0/Njg5XzY0MC5qcGc" alt="City 2" onclick="openLightbox(this.src)" /></div>
+  </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="prev" onclick="navigate(-1)">❮</span>
+    <img id="lightbox-img" />
+    <span class="next" onclick="navigate(1)">❯</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
